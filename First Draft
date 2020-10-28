@@ -34,10 +34,20 @@ public class ConversionProgram
        while (menuEntry !=4)
        {
             switch (menuEntry)
+            
+            //you needed to add breaks at the end of cases otherwise it will just execute one case after another. 
+            //entering 1 will execute 123, entering 2 will execute 23, entering 3 will execute 3
+            
             {   
-               case 1 -> showKilometers(distanceMeters);
-               case 2 -> showInches(distanceMeters);
-               case 3 -> showFeet(distanceMeters);
+               case 1:
+                    showKilometers(distanceMeters);
+                    break;
+               case 2:
+                    showInches(distanceMeters);
+                    break;
+               case 3:
+                    showFeet(distanceMeters);
+                    break;
             } 
         menu(); 
         menuEntry = input.nextInt();
